@@ -75,15 +75,14 @@ header {
 /* main content */
 article {
    text-align: left;
-   background-image: url("../images/wood_background.jpg");
+   background-image: url("../images/wood_background.jpg")
+   opacity: .3;
    overflow: auto;
-   border-bottom: 1px solid black;
-   border-left: 1px solid black;
-   border-right: 1px solid black;
+   
 }
 
 article h2 {
-   font-weight: bold;
+   
    font-size: 2em;
    text-shadow: -8px -5px 6px #000;
    padding: 0 3px 0 0;
@@ -134,10 +133,12 @@ li span.last {
 
 /* form */
 form {
-   background: url("../images/wood_background.jpg");
+   background: 000;
    padding: 5px;
    float: left;
-  }
+   border: none;
+   color: #33cccc;
+}
 
 fieldset {
    padding: 2em;
