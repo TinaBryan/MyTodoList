@@ -12,9 +12,9 @@ function generateList() {
 		document.getElementsByTagName("ol")[0].removeChild(listItems[i]);
 	}
 	for (var i = 0; i < list.length; i++) {
-		var newItem = "<span class='first'>first</span>" + list[i];
+		var newItem = "<span class='first'>first</span>" + list[i] +
 		// This will add the ability to move item to position of last
-		"<span class='last'>last</span" + [i];
+		"<span class='last'>last</span>" + [i];
 		var newListItem = document.createElement("li");
 		newListItem.innerHTML = newItem;
 		document.getElementsByTagName("ol")[0].appendChild(newListItem);
@@ -24,7 +24,7 @@ function generateList() {
 		var lastLastButton = lastButtons[lastButtons.length - 1];
 		if (lastFirstButton.addEventListener) {
 			lastFirstButton.addEventListener("click", moveToTop, false);
-			lastLastButton.addEventListener("click", moveToBotton, false);
+			lastLastButton.addEventListener("click", moveToBottom, false);
 		} else if (lastFirstButton.attachEvent) {
 			lastFirstButton.attachEvent("onclick", moveToTop);
 			lastLastButton.attachEvent("onclick", moveToBottom);
@@ -64,6 +64,7 @@ function moveToTop(evt) {
 	generateList();
 }
 
+// This function allows to move the items in the list to the bottom
 function moveToBottom(evt) {
 	if (evt === undefined) { // get caller element in IE8
 		evt = window.event;
