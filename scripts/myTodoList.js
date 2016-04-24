@@ -14,7 +14,7 @@ function generateList() {
 	for (var i = 0; i < list.length; i++) {
 		var newItem = "<span class='first'>first</span>" + list[i] +
 		// This will add the ability to move item to position of last
-		"<span class='last'>last</span>" + [i];
+		"<span class='last'>Last</span>" + [i];
 		var newListItem = document.createElement("li");
 		newListItem.innerHTML = newItem;
 		document.getElementsByTagName("ol")[0].appendChild(newListItem);

@@ -50,7 +50,7 @@ body {
    margin: 0 auto;
    padding: 0;
    font-family: Arial, Helvetica, sans-serif;
-   color: #cc3300; 
+   color: #e60000; 
 }
 
 ol, ul {
@@ -62,14 +62,15 @@ header {
    background-image: url("../images/wood_background.jpg");
    background-repeat: no-repeat;
    width: 100%;
-   color: #cc3300;
+   color: #e60000;
    font-size: 2em;
    text-shadow: -8px -5px 6px #000;
    text-align: center;
    line-height: 3em;
-   border-bottom: 1px solid black;
-   border-left: 1px solid black;
-   border-right: 1px solid black;
+   border-top: 5px solid black blur;
+   border-bottom: 4px solid black;
+   border-left: 7px solid black;
+   border-right: 3px solid black;
 }
 
 /* main content */
@@ -112,23 +113,29 @@ li {
 }
 
 li span.first {
-   background: green;
-   color: white;
+   background: #666699;
+   color: #f0f0f5;
    padding: 2px 5px;
    margin-right: 3px;
    -moz-border-radius: 5px;
    -webkit-border-radius: 5px;
    border-radius: 5px;
+   margin-right: 1em;
+   font-size: 22px;
+   text-decoration: none;
 }
 
 li span.last {
-   background: red;
-   color: white;
+   background: #666699;
+   color: #f0f0f5;
    padding: 2px 5px;
    margin-right: 3px;
    -moz-border-radius: 5px;
    -webkit-border-radius: 5px;
    border-radius: 5px;
+   margin-left: 1em;
+   font-size: 22px;
+   text-decoration: none;
 }
 
 /* form */
@@ -137,11 +144,11 @@ form {
    padding: 5px;
    float: left;
    border: none;
-   color: #33cccc;
+   color: #e60000;
 }
 
 fieldset {
-   padding: 2em;
+   padding: 1em;
    border: none;
 }
 
@@ -152,12 +159,12 @@ input {
 }
 
 #newItem, #results {
-   width: 15em;
+   width: 20em;
 }
 
 #results {
    font-size: 2em;
-   color: #cc3300;
+   color: #ff6666
    text-shadow: -8px -5px 6px #000;
 }
 
@@ -169,4 +176,7 @@ label {
 
 input, label, button {
    margin: 5px 10px;
+   background-color: #ffcccc;
+   font-size: 1.25em;
+   color: #000;
 }
